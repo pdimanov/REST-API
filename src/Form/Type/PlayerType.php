@@ -14,7 +14,7 @@ class PlayerType extends AbstractType
         $builder
             ->add('name', TextType::class)
             ->add('country', TextType::class)
-            ->add('birthDate', DateType::class, [
+            ->add('birth_date', DateType::class, [
                 'widget' => 'single_text',
                 'format' => 'yyyy-MM-dd'
             ]);

@@ -41,7 +41,9 @@ class PlayerController extends AbstractController
                  * $this->handleException($exception);   <== log the exception so that a dev can look into it
                  *                                 and return a message to the user that an error occurred
                  */
-                return $exception;
+                return $this->json([
+                    'errors' => 'There was an error. Please, try again.'
+                ], 400);
             }
 
             return $this->json([
