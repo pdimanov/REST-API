@@ -28,6 +28,7 @@ After ensuring the database is existent, execute the following command to create
 
 <h2>Starting the server</h2>
 There are several ways to run the application in a browser, whether if it's Nginx, Apache or some other webserver. One of the fastest ways is to use Symfony's web server:
+
 ```
 cd my-project
 symfony server:start
